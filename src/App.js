@@ -8,6 +8,7 @@ import PostList from './components/post-list';
 import Pagination from './components/pagination';
 import PostFilterForm from './components/post-filter-form';
 import Clock from './components/clock';
+import BetterClock from './components/better-clock';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -94,6 +95,8 @@ function App() {
       <h1>React Hooks - Todo List</h1>
       <div>
         {showClock && <Clock />}
+        {showClock && <BetterClock />}
+
         <button
           onClick={() => {
             setShowClock(false);
